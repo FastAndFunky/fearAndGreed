@@ -126,7 +126,7 @@ def main():
     for source, data in [("Cable News Network CNN", cnn), ("Coin Market Cap (CMC) Crypto", cmc)]:
         if data.get("ok") and isinstance(data.get("score"), int):
             score = data["score"]
-            if score >= 75 or score <= 25:
+            if score >= 75 or score <= 40:
                 msg = f"⚠️ {source} Fear & Greed Alert! Score={score}"
                 if source == "CNN":
                     msg += f" ({data.get('rating')})"
