@@ -43,5 +43,8 @@ jobs:
     
     - name: Run Python script FearAndGreed
       run: python fearAndGreed.py
+      env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      CHAT_ID: ${{ secrets.CHAT_ID }}
 
 
