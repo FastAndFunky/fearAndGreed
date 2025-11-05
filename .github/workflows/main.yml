@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: "26 10 * * 1-5"  # Run 10:26 AM UTC time, Monday through Friday
+    - cron: "48 14 * * 1-5"  # Run 2:48 PM UTC time, Monday through Friday
   workflow_dispatch:
 
 permissions:
